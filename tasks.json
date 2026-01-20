@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Hotel System",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-I${workspaceFolder}",
+                "-I${workspaceFolder}/include",
+                "${workspaceFolder}/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/hotel_system.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
